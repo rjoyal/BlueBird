@@ -8,7 +8,18 @@
 
 .header__container {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
+}
+
+.blue-bird__top_container {
+  height: 100vh;
+  width: 100vw;
+  background-image: url({{get_asset_url("/blue-bird-v1/images/sit-and-enjoy.jpeg")}});
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color:#464646;
 }
 
 .header__row-1 {
@@ -32,7 +43,7 @@
 @media (max-width: 767px) {
   .header__container {
     flex-direction: column;
-    padding: 1rem 0 0;
+    /* padding: 1rem 0 0; */
   }
 
   .header__column {
@@ -77,17 +88,17 @@
   align-items: center;
   display: flex;
   height: auto;
-  max-width: 400px;
+  max-width: 150px;
   overflow: hidden;
   margin-bottom: 1rem;
 }
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .header__logo {
     margin: 0 auto;
     width: 100%;
   }
-}
+} */
 
 .header__logo img {
   max-width: 100%;
