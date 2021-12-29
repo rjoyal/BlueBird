@@ -4,7 +4,15 @@
   label: Home v2
   screenshotPath: ../images/template-previews/home.png
 -->
+{% set template_css = '../../css/templates/home_v2.css' %}
 {% extends "./layouts/base_v2.html" %}
+
+{% block home_cta %}
+  <div class="blue-bird__home_cta">
+    {% dnd_area "home_cta" %}
+    {% end_dnd_area %}
+  </div>
+{% endblock home_cta %}
 
 {% block body %}
 
