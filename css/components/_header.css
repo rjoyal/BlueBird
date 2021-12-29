@@ -1,3 +1,9 @@
+/* Header for home page */
+
+.home-header {
+  background: rgba(39, 141, 233, 0.6);
+}
+
 /* Header DND sections */
 
 .header .dnd-section {
@@ -8,7 +14,7 @@
 
 .header__container {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
 }
 
 .blue-bird__top_container {
@@ -43,7 +49,7 @@
 @media (max-width: 767px) {
   .header__container {
     flex-direction: column;
-    /* padding: 1rem 0 0; */
+    padding: 1rem 0 0;
   }
 
   .header__column {
@@ -88,17 +94,17 @@
   align-items: center;
   display: flex;
   height: auto;
-  max-width: 150px;
+  max-width: 400px;
   overflow: hidden;
   margin-bottom: 1rem;
 }
 
-/* @media (max-width: 767px) {
+@media (max-width: 767px) {
   .header__logo {
     margin: 0 auto;
     width: 100%;
   }
-} */
+}
 
 .header__logo img {
   max-width: 100%;

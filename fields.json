@@ -1213,7 +1213,7 @@
             "type": "color",
             "default": {
               "color": "#F8FAFC",
-              "opacity": 100
+              "opacity": 40
             }
           }
         ]
