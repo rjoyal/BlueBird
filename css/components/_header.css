@@ -27,7 +27,7 @@
   background-image: url({{get_asset_url("/blue-bird-v1/images/sit-and-enjoy.jpeg")}});
   background-position: top left;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-size: cover;
   background-color:#464646;
 }
@@ -48,6 +48,10 @@
   .blue-bird__top_container {
     gap: 15%;
   }
+}
+
+@media (max-width: 1280px) {
+  background-image: url({{get_asset_url("/blue-bird-v1/images/sit-and-enjoy-1280.jpeg")}});
 }
 
 .header__row-1 {
