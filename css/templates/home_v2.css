@@ -6,7 +6,6 @@
 }
 
 .blue-bird__cta_text {
-  font-size: .8rem;
   color: #FFFFFF;
 }
 
@@ -21,7 +20,7 @@
     }
 
     .blue-bird__cta_text {
-      font-size: .7em;
+      font-size: .8rem;
       margin-bottom: .6em;
     }
   }
