@@ -1,0 +1,28 @@
+.bb-general__header {
+  padding: 0;
+}
+
+.bb-general__header .header__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+@media (max-width: 767px) {
+  .menu__item {
+    width: auto !important;
+  }
+
+  .menu__item--depth-1 {
+    border: none !important;
+  }
+
+  .menu__link {
+    font-size: .8rem !important;
+  }
+
+  .menu__item--depth-1>.menu__link {
+    padding: .35rem .8rem !important;
+  }
+}

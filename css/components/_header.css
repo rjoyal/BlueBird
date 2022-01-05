@@ -14,6 +14,7 @@
 
 .header__container {
   display: flex;
+  flex-flow: row nowrap;
   justify-content: space-around;
 }
 
@@ -118,8 +119,6 @@
 
 .header__logo {
   align-items: center;
-  display: flex;
-  justify-content: center;
   height: auto;
   max-width: 400px;
   overflow: hidden;
@@ -132,13 +131,11 @@
 
 @media (max-width: 1150px) {
   .header__logo {
-    margin: 0 auto;
     width: 80%;
   }
 
   @media (orientation: landscape) {
     .header__logo {
-      margin: 0 auto;
       width: 30%;
     }
   }
@@ -147,10 +144,6 @@
 .header__logo .logo-company-name {
   font-size: 1.167rem;
   margin-top: 0.7rem;
-}
-
-.header__logo {
-  padding-top: 1rem;
 }
 
 /* Search bar */

@@ -4,7 +4,12 @@
   label: About
   screenshotPath: ../images/template-previews/about.png
 -->
-{% extends './layouts/base.html' %}
+{% set template_css = '../../css/templates/general.css' %}
+{% extends './layouts/base_general.html' %}
+
+{% block header %}
+  {% global_partial path='./partials/general-header.html' %}
+{% endblock header %}
 
 {% block body %}
 
