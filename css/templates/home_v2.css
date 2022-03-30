@@ -14,15 +14,44 @@
     width: 100%;
   }
 
+  .blue-bird__cta_text {
+    font-size: .8rem;
+  }
+
+  @media (orientation: portrait) {
+    @media (min-width: 380px) {
+      .blue-bird__cta_text {
+        font-size: 1rem;
+      }
+    }
+
+    @media (min-width: 800px) {
+      .blue-bird__cta_text {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
   @media (orientation: landscape) {
     .blue-bird__cta_header {
       margin-bottom: .3em;
     }
 
     .blue-bird__cta_text {
-      font-size: .8rem;
+      font-size: .6rem;
       margin-bottom: .6em;
     }
+
+    .blue-bird__home_cta {
+      padding-top: 0;
+    }
+
+    @media (min-width: 1000px) {
+      .blue-bird__cta_text {
+        font-size: 1.2rem;
+      }
+    }
+
   }
 }
 

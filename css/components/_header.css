@@ -33,6 +33,22 @@
   background-color:#464646;
 }
 
+@media (max-width: 768px) {
+  @media (orientation: portrait) {
+    .blue-bird__top_container {
+      background-image: url({{get_asset_url("/blue-bird-v1/images/sit-and-enjoy-mobile-portrait.jpeg")}});
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  @media (min-width: 769px) {
+    .blue-bird__top_container {
+      background-image: url({{get_asset_url("/blue-bird-v1/images/sit-and-enjoy-1280.jpeg")}});
+    }
+  }
+}
+
 @media (max-width: 1150px) {
   .blue-bird__top_container {
     gap: 10%;
@@ -43,16 +59,12 @@
       gap: 0;
     }
   }
-}
 
-@media (min-width: 769px) and (max-width: 1150px) {
-  .blue-bird__top_container {
-    gap: 15%;
+  @media (min-width: 769px) {
+    .blue-bird__top_container {
+      gap: 10%;
+    }
   }
-}
-
-@media (max-width: 1280px) {
-  background-image: url({{get_asset_url("/blue-bird-v1/images/sit-and-enjoy-1280.jpeg")}});
 }
 
 .header__row-1 {

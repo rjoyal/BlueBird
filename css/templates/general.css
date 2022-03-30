@@ -9,6 +9,11 @@
   gap: 0;
 }
 
+.bb-text-on-overlay {
+  text-align: center;
+  background-color: rgba(207, 226, 243, .6);
+}
+
 @media (max-width: 767px) {
   .menu__item {
     width: auto !important;
