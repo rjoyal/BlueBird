@@ -1,0 +1,21 @@
+/* Style the hero container */
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+/* Style the hero image to cover the width of the page */
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+/* Style the hero text */
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}

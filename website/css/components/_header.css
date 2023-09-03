@@ -4,6 +4,10 @@
   background: rgba(39, 141, 233, 0.6);
 }
 
+.general-header {
+  background: rgba(39, 141, 233, 0.3);
+}
+
 /* Header DND sections */
 
 .header .dnd-section {
@@ -16,55 +20,6 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
-}
-
-.blue-bird__top_container {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: start;
-  align-content: flex-start;
-  gap: 20%;
-  height: 100vh;
-  background-image: url({{get_asset_url("/blue-bird-v1/images/sit-and-enjoy.jpeg")}});
-  background-position: top left;
-  background-repeat: no-repeat;
-  /* background-attachment: fixed; */
-  background-size: cover;
-  background-color:#464646;
-}
-
-@media (max-width: 768px) {
-  @media (orientation: portrait) {
-    .blue-bird__top_container {
-      background-image: url({{get_asset_url("/blue-bird-v1/images/sit-and-enjoy-mobile-portrait.jpeg")}});
-    }
-  }
-}
-
-@media (max-width: 1280px) {
-  @media (min-width: 769px) {
-    .blue-bird__top_container {
-      background-image: url({{get_asset_url("/blue-bird-v1/images/sit-and-enjoy-1280.jpeg")}});
-    }
-  }
-}
-
-@media (max-width: 1150px) {
-  .blue-bird__top_container {
-    gap: 10%;
-  }
-
-  @media (orientation: landscape) {
-    .blue-bird__top_container {
-      gap: 0;
-    }
-  }
-
-  @media (min-width: 769px) {
-    .blue-bird__top_container {
-      gap: 10%;
-    }
-  }
 }
 
 .header__row-1 {
