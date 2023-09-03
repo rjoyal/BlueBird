@@ -1,0 +1,17 @@
+<!--
+  templateType: section
+  label: Home banner
+  isAvailableForNewContent: true
+  description: "Logo and menu with background image for the home page."
+-->
+{% dnd_section
+  background_color={{ context.background_color || '#f8fafc' }},
+  vertical_alignment='TOP'
+  background_image={
+    'backgroundPosition': 'TOP_CENTER',
+    'backgroundSize': 'auto',
+    'imageUrl': context.image || get_asset_url('../images/grayscale-mountain.png')
+  },
+  'full_width': true
+%}
+{% end_dnd_section %}
