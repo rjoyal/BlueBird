@@ -1,6 +1,8 @@
 <!--
   templateType: none
 -->
+{% image "background_image" label='Select a background image', src="http://cdn2.hubspot.net/hub/428357/file-2117441560-jpg/img/dev-bg-compressed.jpg",
+export_to_template_context=True %}
 <!doctype html>
 <html lang="{{ html_lang }}" {{ html_lang_dir }}>
   <head>
@@ -8,18 +10,18 @@
     {% if page_meta.html_title %}<title>{{ page_meta.html_title }}</title>{% endif %}
     {% if site_settings.favicon_src %}<link rel="shortcut icon" href="{{ site_settings.favicon_src }}" />{% endif %}
     <meta name="description" content="{{ page_meta.meta_description }}">
-    {{ require_css(get_asset_url("../../css/main.css")) }}
+    {{ require_css(get_asset_url("/blue-bird-v1.1/css/main.css")) }}
     {# This is intended to be used if a template requires template specific style sheets #}
     {% if template_css %}
       {{ require_css(get_asset_url(template_css)) }}
     {% endif %}
-    {{ require_css(get_asset_url("../../css/theme-overrides.css")) }}
+    {{ require_css(get_asset_url("/blue-bird-v1.1/css/theme-overrides.css")) }}
     {# To see a full list of what is included via standard_header_includes please reference this article: https://developers.hubspot.com/docs/cms/hubl/variables#required-page-template-variables #}
     {{ standard_header_includes }}
   </head>
   <body>
     <div class="body-wrapper {{ builtin_body_classes }}">
-      <div class="blue-bird__top_container">
+      <div class="blue-bird__top_container" style="background-image: url('{{ widget_data.background_image.src }}');">
         {% block header %}
           {% global_partial path='../partials/home-header.html' %}
         {% endblock header %}
