@@ -47,7 +47,6 @@
   background-image: url({{get_asset_url("/blue-bird-v1.1/images/sit-and-enjoy.jpeg")}});
   background-position: top left;
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
   background-size: cover;
   background-color:#464646;
 }
@@ -258,7 +257,7 @@
   @media (max-width: 896px) {
     @media (orientation: portrait) {
       .blue-bird__top_container {
-        background-image: url({{get_asset_url("/blue-bird-v1/images/sit-and-enjoy-mobile-portrait.jpeg")}});
+        background-image: url({{get_asset_url("/blue-bird-v1.1/images/sit-and-enjoy-mobile-portrait.jpeg")}});
       }
     }
   }
@@ -359,7 +358,7 @@
 @media (max-width: 1280px) {
   @media (min-width: 769px) {
     .blue-bird__top_container {
-      background-image: url({{get_asset_url("/blue-bird-v1/images/sit-and-enjoy-1280.jpeg")}});
+      background-image: url({{get_asset_url("/blue-bird-v1.1/images/sit-and-enjoy-1280.jpeg")}});
       background-position: center;
     }
   }
