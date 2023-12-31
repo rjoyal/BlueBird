@@ -78,14 +78,13 @@
 	display: flex;
 	height: auto;
 	margin-right: auto;
-	max-width: 200px;
+	max-width: 450px;
 	overflow: hidden;
 }
 
 @media (max-width: 767px) {
 	.header__logo {
-		margin: 0 auto;
-		width: 100%;
+		width: 90%;
 	}
 }
 
@@ -99,7 +98,8 @@
 }
 
 .header__logo--main {
-	padding-top: 1rem;
+	padding-top: 0;
+	padding-left: 1rem;
 }
 
 /* Search bar */

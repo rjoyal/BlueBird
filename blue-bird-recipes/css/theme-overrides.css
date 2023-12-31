@@ -142,7 +142,7 @@
 {% set nav_drop_down_bg_color = color(theme.header.menu.drop_downs.background.color) %}
 {% set nav_drop_down_border = theme.header.menu.drop_downs.border.border.css %}
 
-{% set header_bg_color = color(theme.header.background.color) %}
+{% set header_bg_color = "rgba(39,141,233,.3);" %}
 
 /* 1h. Website footer */
 
@@ -154,7 +154,7 @@
 {###########################################################################}
 
 .content-wrapper {
-  max-width: {{ container_width }};
+  max-width: 100%;
 }
 
 .dnd-section,
