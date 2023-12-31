@@ -1,0 +1,21 @@
+{
+  "label": "Blue Bird Recipes",
+  "author": {
+    "name": "Bob Joyal",
+    "email": "bob@bluebirdmobilebaking.com",
+    "url": "https://bbdbar.com"
+	},
+  "preview_path": "./templates/recipes.html",
+  "screenshot_path": "./images/template-previews/recipes.png",
+  "enable_domain_stylesheets": false,
+  "license": "Apache-2.0",
+  "responsive_breakpoints": [
+    {
+      "name": "mobile",
+      "mediaQuery": "@media (max-width: 767px)",
+      "previewWidth": {
+        "value": 477
+      }
+    }
+  ]
+}

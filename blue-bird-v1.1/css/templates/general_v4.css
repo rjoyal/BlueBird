@@ -245,10 +245,6 @@
     align-items: start;
   }
 
-  .bb-general__nav {
-    margin-right: auto;
-  }
-
   nav.menu.menu--desktop {
     white-space: nowrap;
   }
@@ -348,6 +344,10 @@
       .blue-bird__top_container {
         gap: 10%;
         min-height: auto;
+      }
+
+      .home-header .bb-general__nav {
+        display: none;
       }
     }
 
