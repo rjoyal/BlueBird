@@ -29,7 +29,7 @@
 	}
 }
 
-@media (max-width: 916px) {
+@media (max-width: 1006px) {
 	.header__container {
 		flex-direction: column;
 		padding: 1rem 0 0;
@@ -82,7 +82,7 @@
 	overflow: hidden;
 }
 
-@media (max-width: 916px) {
+@media (max-width: 1006px) {
 	.header__logo {
 		width: 90%;
 	}
@@ -398,7 +398,7 @@
 
 /* Mobile toggles */
 
-@media (max-width: 916px) {
+@media (max-width: 1006px) {
 	.header__navigation,
 	.header__search,
 	.header__language-switcher {

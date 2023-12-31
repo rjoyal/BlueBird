@@ -8,7 +8,7 @@
   display: none;
 }
 
-@media (max-width: 916px) {
+@media (max-width: 1006px) {
   .menu--desktop {
     display: none;
   }
@@ -47,7 +47,7 @@
   }
 }
 
-@media (max-width: 916px) {
+@media (max-width: 1006px) {
   .menu__item {
     display: block;
     width: 100%;
@@ -76,7 +76,7 @@
   width: 100%;
 }
 
-@media (max-width: 916px) {
+@media (max-width: 1006px) {
   .menu__item--depth-1 {
     border-top: 2px solid #CED4DB;
     padding: 0;
@@ -184,7 +184,7 @@
   }
 }
 
-@media (max-width: 916px) {
+@media (max-width: 1006px) {
   .menu__submenu {
     border: none;
     border-radius: 0;
@@ -257,7 +257,7 @@
   }
 }
 
-@media (max-width: 916px) {
+@media (max-width: 1006px) {
   .menu__child-toggle {
     background-position: center right 30px;
     background-repeat: no-repeat;
