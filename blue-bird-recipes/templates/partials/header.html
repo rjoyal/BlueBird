@@ -192,7 +192,6 @@
         {% if content.translated_content|length or is_listing_view and group.translations %}
           <div class="header--toggle header__language-switcher--toggle"></div>
         {% endif %}
-        <div class="header--toggle header__search--toggle">Toggle</div>
         <div class="header__close--toggle"></div>
         <div class="header__navigation header--element">
           {% module "navigation-primary"
@@ -200,6 +199,7 @@
             label="Primary navigation"
           %}
         </div>
+        <div class="header--toggle header__search--toggle"><i class="fa-solid fa-magnifying-glass"></i></div>
       </div>
 
 
