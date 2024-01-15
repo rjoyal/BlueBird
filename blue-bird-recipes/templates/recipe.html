@@ -21,14 +21,50 @@
         </time>
       </div>
       <div class="blog-post__body">
-        {# Lead image #}
+        {# Lead photo #}
         <div class="recipe-lead_image">
-          {% module "recipe_lead_image", path="@hubspot/linked_image" %}
+          {% module "recipe_lead_image" path="@hubspot/linked_image",
+             img={
+               "src": get_asset_url("../images/grayscale-mountain.png"),
+               "alt": "placeholder",
+               "loading": "disabled",
+               "width": "100%"
+             } %}
         </div>
         {# Introduction #}
         {{ content.post_body }}
         {# Secondary images #}
+        <div class="recipe-other_images">
+          {% module "recipe_image_grid" path="@hubspot/image_grid",
+             label="More recipe images",
+             sizing="static",
+             slides=[
+               { "img": get_asset_url("../images/grayscale-mountain.png"), "show_caption": false },
+               { "img": get_asset_url("../images/grayscale-mountain.png"), "show_caption": false }
+             ] %}
+        </div>
         {# Recipe #}
+        <div class="recipe-card">
+          <h2>{% text "simple_text_field" label="Recipe Title", value="{{ content.name }}" %}</h2>
+          <h3>Ingredients</h3>
+          {% widget_block rich_text "recipe_ingredients" overrideable=True, label="Recipe ingredients" %}
+            {% widget_attribute "html" %}
+              <ul>
+                <li>1 cup of this</li>
+                <li>2 tbsp of that</li>
+              </ul>
+            {% end_widget_attribute %}
+          {% end_widget_block %}
+          <h3>Instructions</h3>
+          {% widget_block rich_text "recipe_instructions" overrideable=True, label="Recipe instructions" %}
+            {% widget_attribute "html" %}
+              <ol>
+                <li>Step 1</li>
+                <li>Step 2</li>
+              </ol>
+            {% end_widget_attribute %}
+          {% end_widget_block %}
+        </div>
       </div>
       {% if content.tag_list %}
         <div class="blog-post__tags">
@@ -45,6 +81,8 @@
     </article>
     {% if group.allow_comments %}
       <div class="blog-comments">
+        <h2>Leave a comment</h2>
+
         {% module "blog_comments"
           path="@hubspot/blog_comments",
           label="Blog comments"

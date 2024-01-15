@@ -89,6 +89,17 @@
   text-decoration: underline;
 }
 
-.recipe-lead_image {
+.recipe-lead_image, .recipe-other_images {
   margin-bottom: 1rem;
+  text-align: center;
+}
+
+.recipe-other_images {
+  margin-top: 1rem;
+}
+
+.recipe-card {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: rgba(39,141,233,.1);;
 }
