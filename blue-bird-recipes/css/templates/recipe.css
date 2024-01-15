@@ -88,3 +88,7 @@
   background-color: transparent;
   text-decoration: underline;
 }
+
+.recipe-lead_image {
+  margin-bottom: 1rem;
+}

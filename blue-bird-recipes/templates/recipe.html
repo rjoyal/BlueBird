@@ -16,15 +16,19 @@
     <article class="blog-post">
       <h1>{{ content.name }}</h1>
       <div class="blog-post__meta">
-        <a href="{{ blog_author_url(group.id, content.blog_post_author.slug) }}" rel="author">
-          {{ content.blog_post_author.display_name }}
-        </a>
         <time datetime="{{ content.publish_date }}" class="blog-post__timestamp">
-          {{ content.publish_date_localized }}
+          {{ format_datetime(content.publish_date, "MMMM d, yyyy") }}
         </time>
       </div>
       <div class="blog-post__body">
+        {# Lead image #}
+        <div class="recipe-lead_image">
+          {% module "recipe_lead_image", path="@hubspot/linked_image" %}
+        </div>
+        {# Introduction #}
         {{ content.post_body }}
+        {# Secondary images #}
+        {# Recipe #}
       </div>
       {% if content.tag_list %}
         <div class="blog-post__tags">
