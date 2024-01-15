@@ -1,8 +1,8 @@
 <!--
   templateType: blog_post
   isAvailableForNewContent: true
-  label: Boilerplate - blog post
-  screenshotPath: ../images/template-previews/blog-post.png
+  label: Recipe
+  screenshotPath: ../images/template-previews/recipe.png
 -->
 {% set template_css = "../../css/templates/recipe.css" %}
 {% extends "./layouts/base.html" %}
@@ -37,7 +37,7 @@
         <div class="recipe-other_images">
           {% module "recipe_image_grid" path="@hubspot/image_grid",
              label="More recipe images",
-             sizing="static",
+             sizing="resize",
              slides=[
                { "img": get_asset_url("../images/grayscale-mountain.png"), "show_caption": false },
                { "img": get_asset_url("../images/grayscale-mountain.png"), "show_caption": false }

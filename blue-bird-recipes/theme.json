@@ -8,7 +8,7 @@
   "preview_path": "./templates/recipes.html",
   "screenshot_path": "./images/template-previews/recipes.png",
   "enable_domain_stylesheets": false,
-  "license": "Apache-2.0",
+  "license": "./license.txt",
   "responsive_breakpoints": [
     {
       "name": "mobile",
